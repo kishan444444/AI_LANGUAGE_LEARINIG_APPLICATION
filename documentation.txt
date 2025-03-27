@@ -1,0 +1,66 @@
+# 📄 AI-Powered Language Learning Chatbot - Documentation
+
+## 📌 Introduction
+The AI-Powered Language Learning Chatbot is an interactive web application designed to help users improve their language skills through real-time AI conversations, translations, pronunciation feedback, and mistake tracking. Built using **Streamlit**, it leverages **Groq LLaMA**, **Google Translate**, **gTTS**, and **SQLite** to enhance the user learning experience.
+
+## 🏗️ System Architecture
+The chatbot follows a modular architecture with the following key components:
+
+### **1. User Input**
+- Users can enter text directly or use speech recognition to provide input.
+- If speech input is selected, **SpeechRecognition** converts it into text.
+
+### **2. AI Processing**
+- The input is processed by **LangChain** using **Groq LLaMA** to generate an AI-powered response.
+- The AI adapts responses based on the user's proficiency level and learning language.
+
+### **3. Translation Layer**
+- The AI-generated response is translated into the user’s known language using **Google Translate (Deep Translator API)**.
+
+### **4. Text-to-Speech Output**
+- The translated response is converted into speech using **gTTS** and played back to the user.
+
+### **5. Mistake Logging & Correction**
+- If the user makes a mistake, it is logged in an **SQLite** database along with AI-corrected responses.
+- Users can review their mistakes later for better learning.
+
+## 🖼️ System Architecture Diagram
+
+```
+          +----------------------+   +--------------------+   +------------------+
+          |      User Input      |-->| Speech-to-Text (STT)|-->|  AI Processing  |
+          |  (Text or Speech)   |   | (if applicable)    |   |  (Groq LLaMA)    |
+          +----------------------+   +--------------------+   +------------------+
+                      |                                           |
+                      v                                           v
+          +----------------------+   +--------------------+   +------------------+
+          |    Translation       |-->| Text-to-Speech (TTS)|-->| Output (Text/Audio) |
+          | (Google Translator)  |   |    (gTTS)          |   | and Mistake Logging |
+          +----------------------+   +--------------------+   +------------------+
+```
+
+## 🔧 Technologies Used
+| Component        | Technology  |
+|-----------------|-------------|
+| Frontend        | Streamlit   |
+| AI Model        | Groq LLaMA (via LangChain) |
+| Translation     | Google Translate (Deep Translator) |
+| Speech-to-Text  | SpeechRecognition |
+| Text-to-Speech  | gTTS |
+| Database        | SQLite |
+
+## 🎯 Key Features
+✅ **AI-Powered Conversations** – Adaptive responses based on user proficiency.  
+✅ **Real-Time Translation** – Converts responses into the user’s known language.  
+✅ **Speech Recognition** – Converts user speech into text for analysis.  
+✅ **Text-to-Speech** – Reads translations aloud for pronunciation practice.  
+✅ **Mistake Tracking** – Logs user errors in a database for learning improvements.  
+
+## 📌 Future Enhancements
+- **Pronunciation Scoring** using phoneme comparison.
+- **Conversation Memory** to track user progress.
+- **Multimodal Inputs** (images + text + voice for contextual learning).
+
+---
+Developed by **Kishan Verma**
+
