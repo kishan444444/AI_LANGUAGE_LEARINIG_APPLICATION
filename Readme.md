@@ -14,7 +14,10 @@ This AI-powered chatbot is designed to help users practice and improve their lan
 ✅ Text-to-speech to help with listening practice.  
 ✅ A database to store and review your mistakes.  
 ✅ Powered by **Groq LLaMA-3.3-70B**, Google Translate, gTTS, and SpeechRecognition.  
-##Architecture
+
+
+##  Architecture
+
 ✅User Input (Text or Speech) → Speech-to-Text Processing (if applicable)
 ✅AI Processing → Uses LangChain + Groq LLaMA to generate responses
 ✅Translation Layer → Google Translate converts responses to the user's known language
