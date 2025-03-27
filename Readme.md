@@ -18,11 +18,11 @@ This AI-powered chatbot is designed to help users practice and improve their lan
 
 ##  Architecture
 
-✅User Input (Text or Speech) → Speech-to-Text Processing (if applicable)
-✅AI Processing → Uses LangChain + Groq LLaMA to generate responses
-✅Translation Layer → Google Translate converts responses to the user's known language
-✅Response Output → Displayed as text and optionally read using gTTS (Text-to-Speech)
-✅Error Logging → Mistakes and corrections stored in SQLite for future analysis
+✅User Input (Text or Speech) → Speech-to-Text Processing (if applicable).
+✅AI Processing → Uses LangChain + Groq LLaMA to generate responses.
+✅Translation Layer → Google Translate converts responses to the user's known language.
+✅Response Output → Displayed as text and optionally read using gTTS (Text-to-Speech).
+✅Error Logging → Mistakes and corrections stored in SQLite for future analysis.
 
 📦 Installation
 ##  Tech Stack
@@ -92,5 +92,5 @@ This project is licensed under the **MIT License**.
 
 ---
 
-Built with ❤️ by [Your Name]
+Built with ❤️ by [Kishan Verma]
 
