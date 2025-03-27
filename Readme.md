@@ -27,8 +27,8 @@ This AI-powered chatbot is designed to help users practice and improve their lan
 ##  How to Set Up
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/ai-language-chatbot.git
-cd ai-language-chatbot
+git clone https://github.com/kishan444444/AI_LANGUAGE_LEARINIG_APPLICATION/edit/main/Readme.md
+
 ```
 
 ### 2️⃣ Set Up a Virtual Environment
