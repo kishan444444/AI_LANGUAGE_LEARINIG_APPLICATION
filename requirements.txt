@@ -1,0 +1,9 @@
+streamlit
+deep-translator
+pyttsx3
+SpeechRecognition
+pyttsx3
+langchain
+langchain_groq
+PyAudio
+gtts
