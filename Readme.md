@@ -15,6 +15,16 @@ This AI-powered chatbot is designed to help users practice and improve their lan
 ✅ A database to store and review your mistakes.  
 ✅ Powered by **Groq LLaMA-3.3-70B**, Google Translate, gTTS, and SpeechRecognition.  
 
+
+##  Architecture
+
+✅User Input (Text or Speech) → Speech-to-Text Processing (if applicable).
+✅AI Processing → Uses LangChain + Groq LLaMA to generate responses.
+✅Translation Layer → Google Translate converts responses to the user's known language.
+✅Response Output → Displayed as text and optionally read using gTTS (Text-to-Speech).
+✅Error Logging → Mistakes and corrections stored in SQLite for future analysis.
+
+📦 Installation
 ##  Tech Stack
 - **Python** (Backend logic)
 - **Streamlit** (User interface)
@@ -27,8 +37,8 @@ This AI-powered chatbot is designed to help users practice and improve their lan
 ##  How to Set Up
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/ai-language-chatbot.git
-cd ai-language-chatbot
+git clone https://github.com/kishan444444/AI_LANGUAGE_LEARINIG_APPLICATION/edit/main/Readme.md
+
 ```
 
 ### 2️⃣ Set Up a Virtual Environment
@@ -82,5 +92,5 @@ This project is licensed under the **MIT License**.
 
 ---
 
-Built with ❤️ by [Your Name]
+Built with ❤️ by [Kishan Verma]
 
